@@ -2,31 +2,19 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MSFT — Painel</title>
 <style>
-:root{--bg:#0b0f19;--card:#0f1629;--muted:#94a3b8;--text:#e5e7eb;--ring:#1f2937}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,Segoe UI,Roboto,Arial}
-.wrapper{max-width:1300px;margin:2rem auto;padding:1rem}
-.grid{display:grid;gap:1rem}
-@media(min-width:1100px){.grid{grid-template-columns:1fr 1fr}}
-.card{background:var(--card);border:1px solid var(--ring);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.4)}
-.card h2{margin:1rem 1rem 0}
-.card iframe{width:100%;height:560px;border:0;background:var(--card)}
-.muted{color:var(--muted)}
-a{color:#93c5fd;text-decoration:none}a:hover{text-decoration:underline}
+:root{--bg:#0b1020;--card:#0f172a;--border:#1f2937;--text:#e5e7eb;--muted:#94a3b8}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial}
+.wrapper{max-width:1100px;margin:2rem auto;padding:1rem}
+.h1{font-size:clamp(1.4rem,2.4vw,2rem);font-weight:700;margin:0 0 1rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1rem;margin-bottom:1rem}
+.card h2{margin:0 0 .5rem} .muted{color:var(--muted)}
+iframe{width:100%;height:70vh;border:0;border-radius:10px;background:#000}
+@media (max-width:640px){ iframe{height:60vh} }
 </style></head><body>
 <div class="wrapper">
-  <h1 style="margin-bottom:.25rem">MSFT — Painel</h1>
-  <p class="muted">Plotly • múltiplas fontes • Dark</p>
-  <a href="../">← Home</a>
-  <div class="grid" style="margin-top:1rem">
-    <div class="card"><h2>Candlestick</h2><iframe src="candle.html"></iframe></div>
-    <div class="card"><h2>Volume</h2><iframe src="volume.html"></iframe></div>
-    <div class="card"><h2>Média Móvel 20d</h2><iframe src="sma20.html"></iframe></div>
-    <div class="card"><h2>RSI</h2><iframe src="rsi.html"></iframe></div>
-    <div class="card"><h2>MACD</h2><iframe src="macd.html"></iframe></div>
-    <div class="card"><h2>Bollinger</h2><iframe src="bollinger.html"></iframe></div>
-    <div class="card"><h2>ATR</h2><iframe src="atr.html"></iframe></div>
-    <div class="card" style="grid-column:1 / -1"><h2>Retorno acumulado</h2><iframe src="retorno.html"></iframe></div>
-    <div class="card" style="grid-column:1 / -1"><h2>Heatmap mensal</h2><iframe src="heatmap.html"></iframe></div>
-  </div>
+  <div class="h1">MSFT — Painel</div>
+  <a href="../" class="muted">← Home</a>
+  <div class="card"><h2>Candlestick</h2><iframe src="candle.html" loading="lazy"></iframe></div>
+  <div class="card"><h2>Volume</h2><iframe src="volume.html" loading="lazy"></iframe></div>
+  <div class="card"><h2>Média móvel (20d)</h2><iframe src="sma20.html" loading="lazy"></iframe></div>
 </div></body></html>
