@@ -1,39 +1,46 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Observatório Financeiro</title>
-<style>
-
-:root{
-  --bg:#0b1220; --card:#0f172a; --text:#e5e7eb; --muted:#9ca3af;
-  --accent:#93c5fd; --border:#1f2937
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial}
-.wrapper{max-width:1250px;margin:2rem auto;padding:1rem}
-.header{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
-.muted{color:var(--muted)}
-h1{font-size:clamp(28px,3.0vw,42px);margin:0 0 .25rem}
-h2{font-size:clamp(20px,2.3vw,28px);margin:.75rem 0 .5rem}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1rem;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.35)}
-a, a:visited{color:#cbd5e1}
-footer{margin-top:1.25rem}
-
-.grid{display:grid;gap:1rem}
-@media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-.card a{text-decoration:none;color:inherit}
-.card a:hover{text-decoration:underline}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Observatório Financeiro</title>
+  <style>
+    :root{
+      --bg:#0b1020; --card:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --border:#1e293b; --accent:#7dd3fc;
+    }
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
+    .wrapper{max-width:900px;margin:2rem auto;padding:1rem}
+    h1{margin:0 0 .5rem 0}
+    .muted{color:var(--muted);margin:0 0 1.5rem 0}
+    .grid{display:grid;gap:1rem}
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:14px;
+      padding:1rem 1.25rem; box-shadow:0 1px 3px rgba(0,0,0,.25)
+    }
+    .card h2{margin:0 0 .25rem 0}
+    .card a{color:var(--text); text-decoration:none}
+    .card a:hover{color:var(--accent)}
+    footer{margin-top:1.5rem;color:var(--muted)}
+  </style>
 </head>
 <body>
-<div class="wrapper">
-  <h1>Observatório Financeiro</h1>
-  <p class="muted">Plotly • Stooq/Yahoo/yfinance • GitHub Pages</p>
-  <div class="grid">
-    <div class="card"><h2><a href="AAPL.html">AAPL</a></h2><div class="muted">Painel completo</div></div><div class="card"><h2><a href="MSFT.html">MSFT</a></h2><div class="muted">Painel completo</div></div>
+  <div class="wrapper">
+    <h1>Observatório Financeiro</h1>
+    <p class="muted">Plotly • múltiplas fontes • Dark</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2><a href="AAPL.html?v=2">AAPL — Painel</a></h2>
+        <p class="muted">Candlestick, Volume, SMA, RSI, MACD, Bollinger, ATR, Retorno, Heatmap</p>
+      </div>
+
+      <div class="card">
+        <h2><a href="MSFT.html?v=2">MSFT — Painel</a></h2>
+        <p class="muted">Candlestick, Volume, SMA, RSI, MACD, Bollinger, ATR, Retorno, Heatmap</p>
+      </div>
+    </div>
+
+    <footer>Feito por Pasqual — ciência com método, arte com medida.</footer>
   </div>
-  <footer class="muted">Feito por Pasqual — ciência com método, arte com medida.</footer>
-</div>
 </body>
 </html>
