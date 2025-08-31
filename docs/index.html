@@ -1,25 +1,39 @@
-<!doctype html><html lang="pt-br"><head>
+<!doctype html>
+<html lang="pt-br">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Observatório Financeiro</title>
 <style>
-:root{--bg:#0b0f19;--card:#0f1629;--muted:#94a3b8;--text:#e5e7eb;--ring:#1f2937}
+
+:root{
+  --bg:#0b1220; --card:#0f172a; --text:#e5e7eb; --muted:#9ca3af;
+  --accent:#93c5fd; --border:#1f2937
+}
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,Segoe UI,Roboto,Arial}
-.wrapper{max-width:1300px;margin:2rem auto;padding:1rem}
-.grid{display:grid;gap:1rem}
-@media(min-width:1100px){.grid{grid-template-columns:1fr 1fr}}
-.card{background:var(--card);border:1px solid var(--ring);border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.4)}
-.card h2{margin:1rem 1rem 0}
-.card iframe{width:100%;height:560px;border:0;background:var(--card)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial}
+.wrapper{max-width:1250px;margin:2rem auto;padding:1rem}
+.header{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
 .muted{color:var(--muted)}
-a{color:#93c5fd;text-decoration:none}a:hover{text-decoration:underline}
-</style></head><body>
+h1{font-size:clamp(28px,3.0vw,42px);margin:0 0 .25rem}
+h2{font-size:clamp(20px,2.3vw,28px);margin:.75rem 0 .5rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1rem;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.35)}
+a, a:visited{color:#cbd5e1}
+footer{margin-top:1.25rem}
+
+.grid{display:grid;gap:1rem}
+@media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card a{text-decoration:none;color:inherit}
+.card a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
 <div class="wrapper">
   <h1>Observatório Financeiro</h1>
-  <p class="muted">Plotly • Stooq/Yahoo/yfinance • GitHub Pages • dark</p>
-  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem">
-    <div class="card" style="padding:1rem 1.25rem"><h2><a href="AAPL/">AAPL</a></h2><div class="muted">Painel completo</div></div>
-    <div class="card" style="padding:1rem 1.25rem"><h2><a href="MSFT/">MSFT</a></h2><div class="muted">Painel completo</div></div>
+  <p class="muted">Plotly • Stooq/Yahoo/yfinance • GitHub Pages</p>
+  <div class="grid">
+    <div class="card"><h2><a href="AAPL.html">AAPL</a></h2><div class="muted">Painel completo</div></div><div class="card"><h2><a href="MSFT.html">MSFT</a></h2><div class="muted">Painel completo</div></div>
   </div>
-  <footer class="muted" style="margin-top:2rem">Feito por Pasquara — ciência com método, arte com medida.</footer>
-</div></body></html>
+  <footer class="muted">Feito por Pasqual — ciência com método, arte com medida.</footer>
+</div>
+</body>
+</html>
