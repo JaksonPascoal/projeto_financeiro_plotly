@@ -1,0 +1,27 @@
+<!doctype html><html lang="pt-br"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSFT — Painel</title>
+<style>
+body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:0;background:#fafafa}
+.wrapper{max-width:1300px;margin:2rem auto;padding:1rem}
+.grid{display:grid;gap:1rem}
+@media(min-width:1100px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.card h2{margin:1rem 1rem 0} .card iframe{width:100%;height:560px;border:0}
+a.back{display:inline-block;margin:.5rem 0}
+</style></head><body>
+<div class="wrapper">
+  <h1>MSFT — Painel</h1>
+  <a class="back" href="../">← Home</a>
+  <div class="grid">
+    <div class="card"><h2>Candlestick</h2><iframe src="candle.html"></iframe></div>
+    <div class="card"><h2>Volume</h2><iframe src="volume.html"></iframe></div>
+    <div class="card"><h2>Média Móvel 20d</h2><iframe src="sma20.html"></iframe></div>
+    <div class="card"><h2>RSI</h2><iframe src="rsi.html"></iframe></div>
+    <div class="card"><h2>MACD</h2><iframe src="macd.html"></iframe></div>
+    <div class="card"><h2>Bollinger</h2><iframe src="bollinger.html"></iframe></div>
+    <div class="card"><h2>ATR</h2><iframe src="atr.html"></iframe></div>
+    <div class="card" style="grid-column:1 / -1"><h2>Retorno acumulado</h2><iframe src="retorno.html"></iframe></div>
+    <div class="card" style="grid-column:1 / -1"><h2>Heatmap mensal</h2><iframe src="heatmap.html"></iframe></div>
+  </div>
+</div></body></html>
